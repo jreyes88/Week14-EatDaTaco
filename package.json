@@ -14,7 +14,8 @@
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "method-override": "^2.3.5",
-    "mysql": "^2.10.2"
+    "mysql": "^2.10.2",
+    "ejs": "2.4.1"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/jreyes88/Week14-EatDaTaco/issues"
   },
-  "homepage": "https://github.com/jreyes88/Week14-EatDaTaco#readme"
+  "homepage": "https://github.com/jreyes88/Week14-EatDaTaco#readme",
+  "engines": {
+    "node": "6.2.2"
+  }
 }
