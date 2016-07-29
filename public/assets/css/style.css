@@ -7,7 +7,7 @@ body {
 }
 
 .jumbotron {
-	background-image: url("http://localhost:3000/assets/images/taco_time_background.jpg");
+	background-image: url("/assets/images/taco_time_background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 100%;
