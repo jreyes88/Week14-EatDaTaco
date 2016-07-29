@@ -3,10 +3,10 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
     port: 3306,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'eatTacos_db'
+    host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'avcmo8sa6ne6m7lc',
+    password: 'mnnrlyt4qu0gvdf8',
+    database: 'h3g7xh6s1jy675al'
 });
 
 // Connect to the Database
