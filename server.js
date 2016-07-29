@@ -34,5 +34,5 @@ app.use('/', routes);
 
 // Start the server listening
 // =================================================
-var port = 3000;
+var port = process.env || 3000;
 app.listen(port);
