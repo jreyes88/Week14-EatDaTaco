@@ -1,0 +1,86 @@
+body {
+	font-family: 'Shadows Into Light Two', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", cursive, sans-serif;
+}
+
+.container {
+	margin: 0 5%;
+}
+
+.jumbotron {
+	background-image: url("http://localhost:3000/assets/images/taco_time_background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 308px;
+	display: block;
+	border-radius: 20px;
+}
+
+#pageLogo {
+	width: 30%;
+	float: left;
+}
+
+#addTacoForm {
+	margin: 90px 4% 0 0;
+	float: right;
+	width: 35%;
+	background: #fbcd65;
+	border-radius: 20px;
+}
+
+.mainContent{
+	clear: both;
+	display: block;
+}
+
+#tacosOnPlate {
+	clear: both;
+	width: 45%;
+	margin: 0 0 0 5%;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#tacosDevoured {
+	clear: both;
+	width: 45%;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	background: #FAEBD7;
+	height: 60px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.label {
+	font-weight: bold;
+	text-align: center;
+}
+
+.create-update-form {
+	background: #975d2a;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 20px
+}
+
+.form-group {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+button {
+	display: inline-block;
+}

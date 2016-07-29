@@ -1,0 +1,24 @@
+// Require MySQL
+// =================================================
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+    port: 3306,
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'eatTacos_db'
+});
+
+// Connect to the Database
+// =================================================
+connection.connect(function(err) {
+    if (err) {
+        console.error('error connecting: ' + err.stack);
+        return;
+    }
+    console.log('connected as id ' + connection.threadId);
+});
+
+// Export this connection (this is used by the O.R.M)
+// =================================================
+module.exports = connection;

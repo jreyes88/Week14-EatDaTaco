@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="jumbotron">
+        <img src="http://localhost:3000/assets/images/taco_time.png" id="pageLogo">
+
+        <div id="addTacoForm">
+
+            <h2 class="label">Add a Taco</h2>
+            <form class="create-update-form" action="tacos/create" method="POST">
+
+                <div class="form-group">
+                    <label for="ca">Taco Name:</label>
+                    <input type="text" id="ca" name="name">
+                </div>
+                <button type="submit">Add Taco to Plate</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mainContent">
+
+        <div id="tacosOnPlate">
+            <h2>Tacos on your plate!</h2>
+            <ul>
+                {{#each tacos}}
+                    {{#unless this.devoured}}
+                        <li class="tacoList">
+                            {{this.name}}
+
+                            <form action="tacos/update/{{this.id}}?_method=PUT" method="POST">
+                                <input type="hidden" name="devoured" value="true">
+                                <button type="submit">DEVOUR ME!</button>
+                            </form>
+                        </li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div id="tacosDevoured">
+            <h2>Tacos that are devoured!</h2>
+            <ul>
+                {{#each tacos}}
+                    {{#if this.devoured}}
+                        <li>
+                            {{this.name}}
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
